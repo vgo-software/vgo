@@ -1,0 +1,56 @@
+#App配置
+app:
+  env: debug #环境状态：debug=开发，release=生产
+  host: 0.0.0.0   #服务地址
+  port: 8080      #服务端口
+  lang: zh-cn     #默认语言设置：zh-cn
+  requestLog: 0   #是否开启请求日志：0=关闭，1=开启
+  uploadType: cos #文件上传类型：local=本地，oss=阿里云OSS，cos=腾讯云COS
+  apiOrigins: http://localhost:8080,http://127.0.0.1:5500  #允许跨域请求的域名，多个域名用逗号分隔
+  fileDomain: http://localhost:8080  #文件访问域名，用于生成文件下载链接
+#Mysql数据库配置
+dbConf:
+  driver: mysql
+  hostname: 127.0.0.1
+  hostPort: 3306
+  database: go_study
+  username: root
+  password: 110112...
+#Redis数据库配置
+redisConf:
+  hostname: 127.0.0.1
+  hostPort: 6379
+  username:
+  password:
+  db: 11
+ #JWT配置
+ jwtConf:
+   adminKey: pDxCHgMzlarDuWFeDVSlQNHyZVoxeBfJsGVz
+   adminSingleLogin: 1
+   apikey: pDxCHgMzlarDuWFeDVSlQNHyZVssssssssszxz
+   apiSingleLogin: 1
+   adminTimeout: 24
+   apiTimeout: 24
+#队列配置
+queueConf:
+  enable: 1
+  hostname: 127.0.0.1
+  hostPort: 6379
+  username:
+  password:
+  db: 12
+  concurrency: 10
+#Snowflake配置
+snowflakeConf:
+  node: 1
+#阿里云OsS配置
+ossConf:
+  accessKeyID: xx
+  accessKeySecret: xx
+  endPoint: https://oss-cn-xx.aliyuncs.com
+  bucketName: xx
+#腾讯云COS配置
+cosConf:
+  secretID: xx
+  secretKey: xx
+  endpoint: https://xx-xx.cos.ap-xxx.myqcloud.com

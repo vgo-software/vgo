@@ -1,0 +1,9 @@
+/.idea
+/.vscode
+/storage/logs/*
+/storage/uploads/*
+/*.exe
+/*.exe~
+/*.log
+/configs/*.yaml
+vgo
