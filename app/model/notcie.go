@@ -2,7 +2,7 @@ package model
 
 import (
 	"gorm.io/plugin/soft_delete"
-	"ych/vgo/app/common"
+	"vgo-software/vgo/app/common"
 )
 
 type Notice struct {

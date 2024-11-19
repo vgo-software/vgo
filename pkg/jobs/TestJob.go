@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"github.com/hibiken/asynq"
 	"go.uber.org/zap"
-	"ych/vgo/internal/global"
+	"vgo-software/vgo/internal/global"
 )
 
 const (

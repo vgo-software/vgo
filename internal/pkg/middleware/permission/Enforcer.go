@@ -5,7 +5,7 @@ import (
 	"github.com/casbin/casbin/v2/model"
 	rds "github.com/redis/go-redis/v9"
 	"log"
-	"ych/vgo/internal/global"
+	"vgo-software/vgo/internal/global"
 
 	"github.com/casbin/casbin/v2"
 	gormadapter "github.com/casbin/gorm-adapter/v3"

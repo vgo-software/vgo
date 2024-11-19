@@ -2,8 +2,8 @@ package bootstrap
 
 import (
 	"sync"
-	"ych/vgo/internal/global"
-	"ych/vgo/internal/pkg/middleware/permission"
+	"vgo-software/vgo/internal/global"
+	"vgo-software/vgo/internal/pkg/middleware/permission"
 )
 
 // permissionLock 读写锁

@@ -5,7 +5,7 @@ import (
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/viper"
 	"path/filepath"
-	"ych/vgo/internal/global"
+	"vgo-software/vgo/internal/global"
 )
 
 // InitConfig 初始化配置

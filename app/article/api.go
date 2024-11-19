@@ -1,9 +1,9 @@
 package article
 
 import (
-	"ych/vgo/app/common"
-	"ych/vgo/app/model"
-	"ych/vgo/internal/global"
+	"vgo-software/vgo/app/common"
+	"vgo-software/vgo/app/model"
+	"vgo-software/vgo/internal/global"
 )
 
 func RegisterApiRoutes() {

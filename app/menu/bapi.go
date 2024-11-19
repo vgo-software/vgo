@@ -3,12 +3,12 @@ package menu
 import (
 	"github.com/gin-gonic/gin"
 	"strconv"
-	"ych/vgo/app/common"
-	"ych/vgo/app/model"
-	"ych/vgo/app/role"
-	"ych/vgo/internal/global"
-	"ych/vgo/pkg/enum"
-	"ych/vgo/pkg/response"
+	"vgo-software/vgo/app/common"
+	"vgo-software/vgo/app/model"
+	"vgo-software/vgo/app/role"
+	"vgo-software/vgo/internal/global"
+	"vgo-software/vgo/pkg/enum"
+	"vgo-software/vgo/pkg/response"
 )
 
 // GetMenuIdsByRoleId 获取角色菜单ID列表

@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"strconv"
 	"time"
-	"ych/vgo/internal/global"
-	"ych/vgo/internal/pkg/snow"
-	"ych/vgo/pkg/response"
+	"vgo-software/vgo/internal/global"
+	"vgo-software/vgo/internal/pkg/snow"
+	"vgo-software/vgo/pkg/response"
 )
 
 // VideoUpload 视频上传

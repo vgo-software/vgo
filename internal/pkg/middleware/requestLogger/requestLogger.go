@@ -4,7 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 	"time"
-	"ych/vgo/internal/global"
+	"vgo-software/vgo/internal/global"
 )
 
 // GetLogger 请求日志

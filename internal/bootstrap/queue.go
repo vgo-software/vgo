@@ -2,8 +2,8 @@ package bootstrap
 
 import (
 	"sync"
-	"ych/vgo/internal/global"
-	"ych/vgo/internal/pkg/queue"
+	"vgo-software/vgo/internal/global"
+	"vgo-software/vgo/internal/pkg/queue"
 )
 
 // queueLock 读写锁

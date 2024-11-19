@@ -3,7 +3,7 @@ package snow
 import (
 	"fmt"
 	"github.com/bwmarrin/snowflake"
-	"ych/vgo/internal/global"
+	"vgo-software/vgo/internal/global"
 )
 
 // SnowflakeService 创建雪花算法节点

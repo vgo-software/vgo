@@ -2,7 +2,7 @@ package model
 
 import (
 	"gorm.io/gorm"
-	"ych/vgo/app/common"
+	"vgo-software/vgo/app/common"
 )
 
 // Menu 菜单

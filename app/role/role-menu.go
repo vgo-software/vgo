@@ -1,7 +1,7 @@
 package role
 
 import (
-	"ych/vgo/app/common"
+	"vgo-software/vgo/app/common"
 )
 
 // RoleMenu 角色菜单

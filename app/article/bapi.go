@@ -3,12 +3,12 @@ package article
 import (
 	"github.com/gin-gonic/gin"
 	"time"
-	"ych/vgo/app/common"
-	"ych/vgo/app/model"
-	"ych/vgo/internal/global"
-	"ych/vgo/internal/pkg/middleware/rateLimiter"
-	"ych/vgo/pkg/helper"
-	"ych/vgo/pkg/response"
+	"vgo-software/vgo/app/common"
+	"vgo-software/vgo/app/model"
+	"vgo-software/vgo/internal/global"
+	"vgo-software/vgo/internal/pkg/middleware/rateLimiter"
+	"vgo-software/vgo/pkg/helper"
+	"vgo-software/vgo/pkg/response"
 )
 
 // Change 改变状态

@@ -1,17 +1,17 @@
 package app
 
 import (
-	"ych/vgo/app/admin-user"
-	"ych/vgo/app/article"
-	"ych/vgo/app/common"
-	"ych/vgo/app/menu"
-	"ych/vgo/app/notice"
-	"ych/vgo/app/role"
-	"ych/vgo/app/upload"
-	"ych/vgo/app/ws"
-	"ych/vgo/internal/global"
-	"ych/vgo/internal/pkg/middleware/auth"
-	"ych/vgo/internal/pkg/middleware/permission"
+	"vgo-software/vgo/app/admin-user"
+	"vgo-software/vgo/app/article"
+	"vgo-software/vgo/app/common"
+	"vgo-software/vgo/app/menu"
+	"vgo-software/vgo/app/notice"
+	"vgo-software/vgo/app/role"
+	"vgo-software/vgo/app/upload"
+	"vgo-software/vgo/app/ws"
+	"vgo-software/vgo/internal/global"
+	"vgo-software/vgo/internal/pkg/middleware/auth"
+	"vgo-software/vgo/internal/pkg/middleware/permission"
 )
 
 func InitRouter() {

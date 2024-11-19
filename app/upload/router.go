@@ -1,7 +1,7 @@
 package upload
 
 import (
-	"ych/vgo/internal/global"
+	"vgo-software/vgo/internal/global"
 )
 
 func CollectRoutes() {

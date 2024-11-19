@@ -1,7 +1,7 @@
 package model
 
 import (
-	"ych/vgo/app/common"
+	"vgo-software/vgo/app/common"
 )
 
 // Role 角色

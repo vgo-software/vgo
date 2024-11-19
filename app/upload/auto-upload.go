@@ -5,8 +5,8 @@ import (
 	"github.com/gabriel-vasile/mimetype"
 	"github.com/gin-gonic/gin"
 	"io"
-	"ych/vgo/internal/global"
-	"ych/vgo/pkg/response"
+	"vgo-software/vgo/internal/global"
+	"vgo-software/vgo/pkg/response"
 )
 
 func Run(ctx *gin.Context) {

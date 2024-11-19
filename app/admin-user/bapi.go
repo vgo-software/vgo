@@ -5,12 +5,12 @@ import (
 	"github.com/gin-gonic/gin"
 	"golang.org/x/crypto/bcrypt"
 	"strconv"
-	"ych/vgo/app/common"
-	"ych/vgo/app/model"
-	"ych/vgo/internal/global"
-	"ych/vgo/internal/pkg/middleware/auth"
-	"ych/vgo/pkg/helper"
-	"ych/vgo/pkg/response"
+	"vgo-software/vgo/app/common"
+	"vgo-software/vgo/app/model"
+	"vgo-software/vgo/internal/global"
+	"vgo-software/vgo/internal/pkg/middleware/auth"
+	"vgo-software/vgo/pkg/helper"
+	"vgo-software/vgo/pkg/response"
 )
 
 // Login 登录

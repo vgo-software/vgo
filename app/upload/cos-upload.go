@@ -9,8 +9,8 @@ import (
 	"net/http"
 	"net/url"
 	"path/filepath"
-	"ych/vgo/internal/global"
-	"ych/vgo/pkg/response"
+	"vgo-software/vgo/internal/global"
+	"vgo-software/vgo/pkg/response"
 )
 
 func RunCos(ctx *gin.Context) {

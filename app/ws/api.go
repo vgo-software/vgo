@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"sync"
 	"time"
-	"ych/vgo/internal/pkg/snow"
-	"ych/vgo/pkg/helper"
-	"ych/vgo/pkg/response"
+	"vgo-software/vgo/internal/pkg/snow"
+	"vgo-software/vgo/pkg/helper"
+	"vgo-software/vgo/pkg/response"
 )
 
 var (

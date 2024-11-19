@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 	"time"
-	"ych/vgo/internal/global"
+	"vgo-software/vgo/internal/global"
 )
 
 var (
