@@ -106,9 +106,7 @@ func GetRole(ctx *gin.Context) {
 }
 
 func RegisterBapiRoutes() {
-	global.Engine.Group("/backend").POST("/user/login", Login)
 	handler := common.NewCRUDHandler(&model.AdminUser{}, nil)
-
 	handler.BeforeCreate = func(ctx *gin.Context, m interface{}) error {
 		adminUser, ok := m.(*model.AdminUser)
 		if !ok {
@@ -146,12 +144,12 @@ func RegisterBapiRoutes() {
 		return nil
 	}
 
+	global.Engine.Group("/backend").POST("/user/login", Login)
 	global.BackendRouter.GET("/users", handler.Index)
 	global.BackendRouter.POST("/users", handler.Create)
 	global.BackendRouter.PUT("/users", handler.Update)
 	global.BackendRouter.GET("/users/:id", handler.Show)
 	global.BackendRouter.DELETE("/users", handler.Delete)
-
 	global.BackendRouter.POST("/users/set/role", SetRole)
 	global.BackendRouter.POST("/users/get/role", GetRole)
 	global.BackendRouter.POST("/users/logout", LogOut)

@@ -5,7 +5,6 @@ import (
 	"strconv"
 	"vgo-software/vgo/app/common"
 	"vgo-software/vgo/app/model"
-	"vgo-software/vgo/app/role"
 	"vgo-software/vgo/internal/global"
 	"vgo-software/vgo/pkg/enum"
 	"vgo-software/vgo/pkg/response"
@@ -26,7 +25,7 @@ func GetMenuIdsByRoleId(userID uint64) []uint64 {
 		roleIDs = append(roleIDs, rid.ID)
 	}
 	// 获取角色菜单关联
-	var roleMenu []role.RoleMenu
+	var roleMenu []model.RoleMenu
 	global.DbCon.Find(&roleMenu, "role_id in (?)", roleIDs)
 	menuIDs := make([]uint64, 0)
 	for _, roleMenu := range roleMenu {

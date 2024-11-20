@@ -13,5 +13,4 @@ func RandomFileName() string {
 	nano := time.Now().UnixNano()
 	fileName := fmt.Sprintf("%d_%d", nano, randomNum)
 	return fileName
-
 }

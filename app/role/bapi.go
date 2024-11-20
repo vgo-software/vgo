@@ -28,7 +28,7 @@ func GetMenu(ctx *gin.Context) {
 		response.Fail(ctx, "参数错误", err.Error(), nil)
 		return
 	}
-	var res []RoleMenu
+	var res []model.RoleMenu
 	if err := global.DbCon.Where("role_id = ?", codes.ID).Find(&res).Error; err != nil {
 		response.Fail(ctx, "数据库查询失败", err.Error())
 		return
@@ -48,7 +48,7 @@ func SetMenu(ctx *gin.Context) {
 	}
 	roleID := codes.ID
 	// 清理原有菜单
-	if err := global.DbCon.Delete(&RoleMenu{}, "role_id = ?", roleID).Error; err != nil {
+	if err := global.DbCon.Delete(&model.RoleMenu{}, "role_id = ?", roleID).Error; err != nil {
 		response.Fail(ctx, "菜单清理失败", err.Error())
 		return
 	}
@@ -71,7 +71,7 @@ func SetMenu(ctx *gin.Context) {
 	}
 	// 写入角色菜单关联和策略
 	for _, menu := range codes.Menus {
-		var item RoleMenu
+		var item model.RoleMenu
 		item.RoleId = roleID
 		item.MenuId = menu
 		dbMenu, exists := menuMap[int(menu)]

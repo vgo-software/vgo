@@ -2,11 +2,10 @@ package model
 
 import (
 	"gorm.io/plugin/soft_delete"
-	"vgo-software/vgo/app/common"
 )
 
 type Notice struct {
-	common.BaseModel
+	BaseModel
 	Title     string                `gorm:"type:varchar(255);not null;column:title;uniqueIndex:udx_title;default:'';comment:标题;" validate:"required" json:"title"`
 	Status    int                   `gorm:"column:status;type:smallint;not null;default:1;comment:状态 (1启用 2禁用)" json:"status"`
 	Content   string                `gorm:"type:text;column:content;comment:公告内容;" json:"content"`

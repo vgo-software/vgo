@@ -2,12 +2,11 @@ package model
 
 import (
 	"gorm.io/gorm"
-	"vgo-software/vgo/app/common"
 )
 
 // Menu 菜单
 type Menu struct {
-	common.BaseModel
+	BaseModel
 	ParentId    uint64                 `gorm:"column:parent_id;type:bigint;not null;default:0;comment:父ID" json:"parent_id"`
 	Path        string                 `gorm:"column:path;type:varchar(50);not null;default:'';comment:路由访问路径" json:"path"`
 	Name        string                 `gorm:"column:name;type:varchar(50);not null;default:'';comment:路由name" json:"name"`

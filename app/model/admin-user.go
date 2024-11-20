@@ -1,12 +1,8 @@
 package model
 
-import (
-	"vgo-software/vgo/app/common"
-)
-
 // AdminUser 管理员用户
 type AdminUser struct {
-	common.BaseModel
+	BaseModel
 	UserName       string `gorm:"column:username;unique;index;default:'';type:varchar(20);not null;comment:用户名" validate:"required" form:"username" json:"username"`
 	Password       string `gorm:"column:password;default:'';not null;comment:密码" form:"password" validate:"required" json:"password"`
 	UserType       string `gorm:"column:user_type;default:'100';not null;comment:用户类型：(100系统用户)" form:"user_type" json:"user_type"`

@@ -43,25 +43,22 @@ func Run(ctx *gin.Context) {
 		return
 	}
 	defType := defTypes[uploadType]
-	//检查文件大小
 	if file.Size > defType.size {
 		response.Fail(ctx, fmt.Sprintf("文件大小不能超过 %d MB", defType.size/(1024*1024)), nil)
 		return
 	}
-	//读取文件
 	src, err := file.Open()
 	if err != nil {
-		response.Fail(ctx, "无法打开文件", err.Error())
+		response.Fail(ctx, "获取文件失败", err.Error())
 		return
 	}
 	defer src.Close()
-	// 读取文件内容
 	fileContent, err := io.ReadAll(src)
 	if err != nil {
-		response.Fail(ctx, "无法读取文件内容", err.Error())
+		response.Fail(ctx, "获取文件失败", err.Error())
 		return
 	}
-	// 使用 mimetype 库获取文件的真实类型
+	// 获取文件mimetype
 	mime := mimetype.Detect(fileContent)
 	fileType := mime.String()
 	validMime := false
@@ -84,7 +81,7 @@ func Run(ctx *gin.Context) {
 			return
 		}
 		imgDomain := global.Config.App.FileDomain
-		response.Success(ctx, "Local文件上传成功", gin.H{
+		response.Success(ctx, "上传成功", gin.H{
 			"fileUrl": imgDomain + respUrl,
 		}, nil)
 		break
@@ -93,7 +90,7 @@ func Run(ctx *gin.Context) {
 		if err != nil {
 			return
 		}
-		response.Success(ctx, "Oss文件上传成功", gin.H{
+		response.Success(ctx, "上传成功", gin.H{
 			"fileUrl": respUrl,
 		}, nil)
 		break
@@ -102,7 +99,7 @@ func Run(ctx *gin.Context) {
 		if err != nil {
 			return
 		}
-		response.Success(ctx, "Cos文件上传成功", gin.H{
+		response.Success(ctx, "上传成功", gin.H{
 			"fileUrl": respUrl,
 		}, nil)
 		break
