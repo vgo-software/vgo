@@ -41,11 +41,11 @@ func ShowApi(ctx *gin.Context) {
 		response.Fail(ctx, "无效的ID参数", nil)
 		return
 	}
-	var model model.Notice
-	if err := global.DbCon.First(&model, id).Error; helper.HandleErr(ctx, err, "") {
+	var m model.Notice
+	if err := global.DbCon.First(&m, id).Error; helper.HandleErr(ctx, err, "") {
 		return
 	}
-	response.Success(ctx, "成功", model, nil)
+	response.Success(ctx, "成功", m, nil)
 }
 
 func RegisterApiRoutes() {

@@ -1,4 +1,4 @@
-package rateLimiter
+package rate_limiter
 
 import (
 	"github.com/gin-gonic/gin"

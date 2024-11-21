@@ -6,7 +6,7 @@ import (
 	"vgo-software/vgo/app/common"
 	"vgo-software/vgo/app/model"
 	"vgo-software/vgo/internal/global"
-	"vgo-software/vgo/internal/pkg/middleware/rateLimiter"
+	"vgo-software/vgo/internal/pkg/middleware/rate-limiter"
 	"vgo-software/vgo/pkg/helper"
 	"vgo-software/vgo/pkg/response"
 )
@@ -42,7 +42,7 @@ func RegisterBapiRoutes() {
 	}
 	articleHandler := common.NewCRUDHandler(&model.Article{}, ArticleValidateRules)
 
-	global.BackendRouter.GET("/articles", rateLimiter.Limiter(1, time.Second*1), articleHandler.Index)
+	global.BackendRouter.GET("/articles", rate_limiter.Limiter(1, time.Second*1), articleHandler.Index)
 	global.BackendRouter.POST("/articles", articleHandler.Create)
 	global.BackendRouter.PUT("/articles", articleHandler.Update)
 	global.BackendRouter.GET("/articles/:id", articleHandler.Show)

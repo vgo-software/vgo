@@ -1,4 +1,4 @@
-package requestLogger
+package request_logger
 
 import (
 	"github.com/gin-gonic/gin"
