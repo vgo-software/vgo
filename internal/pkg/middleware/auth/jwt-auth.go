@@ -4,8 +4,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"strconv"
 	"strings"
-	"ych/vgo/internal/global"
-	"ych/vgo/pkg/response"
+	"vgo-software/vgo/internal/global"
+	"vgo-software/vgo/pkg/response"
 )
 
 // AdminAuthMiddleware JWT验证中间件

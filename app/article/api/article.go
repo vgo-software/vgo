@@ -1,9 +1,9 @@
 package api
 
 import (
-	"ych/vgo/app/article/model"
-	"ych/vgo/app/common/backend"
-	"ych/vgo/internal/global"
+	"vgo-software/vgo/app/article/model"
+	"vgo-software/vgo/app/common/backend"
+	"vgo-software/vgo/internal/global"
 )
 
 func RegisterArticleRoutes() {

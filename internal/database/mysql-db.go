@@ -5,7 +5,7 @@ import (
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"time"
-	"ych/vgo/internal/global"
+	"vgo-software/vgo/internal/global"
 )
 
 // ConnectMysql 连接mysql数据库

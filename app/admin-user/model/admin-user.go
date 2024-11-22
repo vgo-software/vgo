@@ -1,6 +1,6 @@
 package model
 
-import "ych/vgo/app/common/model"
+import "vgo-software/vgo/app/common/model"
 
 // AdminUser 管理员用户
 type AdminUser struct {

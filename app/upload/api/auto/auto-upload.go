@@ -5,11 +5,11 @@ import (
 	"github.com/gabriel-vasile/mimetype"
 	"github.com/gin-gonic/gin"
 	"io"
-	"ych/vgo/app/upload/api/ali-oss"
-	"ych/vgo/app/upload/api/local"
-	"ych/vgo/app/upload/api/tencent-cos"
-	"ych/vgo/internal/global"
-	"ych/vgo/pkg/response"
+	"vgo-software/vgo/app/upload/api/ali-oss"
+	"vgo-software/vgo/app/upload/api/local"
+	"vgo-software/vgo/app/upload/api/tencent-cos"
+	"vgo-software/vgo/internal/global"
+	"vgo-software/vgo/pkg/response"
 )
 
 func Run(ctx *gin.Context) {

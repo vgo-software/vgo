@@ -2,8 +2,8 @@ package bootstrap
 
 import (
 	"sync"
-	"ych/vgo/internal/database"
-	"ych/vgo/internal/global"
+	"vgo-software/vgo/internal/database"
+	"vgo-software/vgo/internal/global"
 )
 
 // dbLock 读写锁

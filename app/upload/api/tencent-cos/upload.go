@@ -9,9 +9,9 @@ import (
 	"net/http"
 	"net/url"
 	"path/filepath"
-	Upload "ych/vgo/app/upload/common"
-	"ych/vgo/internal/global"
-	"ych/vgo/pkg/response"
+	Upload "vgo-software/vgo/app/upload/common"
+	"vgo-software/vgo/internal/global"
+	"vgo-software/vgo/pkg/response"
 )
 
 func Run(ctx *gin.Context) {

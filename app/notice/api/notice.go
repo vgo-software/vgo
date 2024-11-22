@@ -3,10 +3,10 @@ package api
 import (
 	"github.com/gin-gonic/gin"
 	"strconv"
-	"ych/vgo/app/notice/model"
-	"ych/vgo/internal/global"
-	"ych/vgo/pkg/helper"
-	"ych/vgo/pkg/response"
+	"vgo-software/vgo/app/notice/model"
+	"vgo-software/vgo/internal/global"
+	"vgo-software/vgo/pkg/helper"
+	"vgo-software/vgo/pkg/response"
 )
 
 // Index 列表

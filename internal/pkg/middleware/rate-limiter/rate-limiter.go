@@ -4,7 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"golang.org/x/time/rate"
 	"time"
-	"ych/vgo/pkg/response"
+	"vgo-software/vgo/pkg/response"
 )
 
 // Limiter 限流中间件

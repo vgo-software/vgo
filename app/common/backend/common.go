@@ -6,9 +6,9 @@ import (
 	"gorm.io/gorm"
 	"reflect"
 	"strconv"
-	"ych/vgo/internal/global"
-	"ych/vgo/pkg/helper"
-	"ych/vgo/pkg/response"
+	"vgo-software/vgo/internal/global"
+	"vgo-software/vgo/pkg/helper"
+	"vgo-software/vgo/pkg/response"
 )
 
 type ValidationRules struct {

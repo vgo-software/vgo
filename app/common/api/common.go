@@ -2,7 +2,7 @@ package api
 
 import (
 	"github.com/gin-gonic/gin"
-	"ych/vgo/pkg/response"
+	"vgo-software/vgo/pkg/response"
 )
 
 func Test(ctx *gin.Context) {

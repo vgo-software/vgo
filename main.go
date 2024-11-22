@@ -1,7 +1,7 @@
 package main
 
 import (
-	"ych/vgo/internal/core"
+	"vgo-software/vgo/internal/core"
 )
 
 func main() {

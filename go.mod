@@ -1,4 +1,4 @@
-module ych/vgo
+module vgo-software/vgo
 
 go 1.22.5
 

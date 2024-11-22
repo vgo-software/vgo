@@ -1,7 +1,7 @@
 package router
 
 import (
-	"ych/vgo/app/admin-user/backend"
+	"vgo-software/vgo/app/admin-user/backend"
 )
 
 func CollectRoutes() {

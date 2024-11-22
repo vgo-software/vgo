@@ -2,8 +2,8 @@ package model
 
 import (
 	"strconv"
-	"ych/vgo/app/common/model"
-	"ych/vgo/internal/global"
+	"vgo-software/vgo/app/common/model"
+	"vgo-software/vgo/internal/global"
 )
 
 // RoleMenu 角色菜单

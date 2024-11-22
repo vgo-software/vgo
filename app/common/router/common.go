@@ -1,8 +1,8 @@
 package router
 
 import (
-	"ych/vgo/app/common/api"
-	"ych/vgo/internal/global"
+	"vgo-software/vgo/app/common/api"
+	"vgo-software/vgo/internal/global"
 )
 
 func CollectRoutes() {

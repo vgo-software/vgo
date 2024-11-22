@@ -1,18 +1,18 @@
 package app
 
 import (
-	AdminUserRouter "ych/vgo/app/admin-user/router"
-	ArticleRouter "ych/vgo/app/article/router"
-	CommonRouter "ych/vgo/app/common/router"
-	MenuRouter "ych/vgo/app/menu/router"
-	NoticeRouter "ych/vgo/app/notice/router"
-	RoleRouter "ych/vgo/app/role/router"
-	UploadRouter "ych/vgo/app/upload/router"
-	wsrouter "ych/vgo/app/ws/router"
+	AdminUserRouter "vgo-software/vgo/app/admin-user/router"
+	ArticleRouter "vgo-software/vgo/app/article/router"
+	CommonRouter "vgo-software/vgo/app/common/router"
+	MenuRouter "vgo-software/vgo/app/menu/router"
+	NoticeRouter "vgo-software/vgo/app/notice/router"
+	RoleRouter "vgo-software/vgo/app/role/router"
+	UploadRouter "vgo-software/vgo/app/upload/router"
+	wsrouter "vgo-software/vgo/app/ws/router"
 
-	"ych/vgo/internal/global"
-	"ych/vgo/internal/pkg/middleware/auth"
-	"ych/vgo/internal/pkg/middleware/permission"
+	"vgo-software/vgo/internal/global"
+	"vgo-software/vgo/internal/pkg/middleware/auth"
+	"vgo-software/vgo/internal/pkg/middleware/permission"
 )
 
 func InitRouter() {

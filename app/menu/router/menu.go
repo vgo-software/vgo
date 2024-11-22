@@ -1,6 +1,6 @@
 package router
 
-import "ych/vgo/app/menu/backend"
+import "vgo-software/vgo/app/menu/backend"
 
 func CollectRoutes() {
 	backend.RegisterMenuRoutes()

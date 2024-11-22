@@ -2,12 +2,12 @@ package backend
 
 import (
 	"github.com/gin-gonic/gin"
-	"ych/vgo/app/common/backend"
-	MenuModel "ych/vgo/app/menu/model"
-	"ych/vgo/app/role/model"
-	"ych/vgo/internal/global"
-	"ych/vgo/pkg/helper"
-	"ych/vgo/pkg/response"
+	"vgo-software/vgo/app/common/backend"
+	MenuModel "vgo-software/vgo/app/menu/model"
+	"vgo-software/vgo/app/role/model"
+	"vgo-software/vgo/internal/global"
+	"vgo-software/vgo/pkg/helper"
+	"vgo-software/vgo/pkg/response"
 )
 
 // GetAll 获取全部

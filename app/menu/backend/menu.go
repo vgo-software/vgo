@@ -3,12 +3,12 @@ package backend
 import (
 	"github.com/gin-gonic/gin"
 	"strconv"
-	"ych/vgo/app/common/backend"
-	"ych/vgo/app/menu/model"
-	Role "ych/vgo/app/role/model"
-	"ych/vgo/internal/global"
-	"ych/vgo/pkg/enum"
-	"ych/vgo/pkg/response"
+	"vgo-software/vgo/app/common/backend"
+	"vgo-software/vgo/app/menu/model"
+	Role "vgo-software/vgo/app/role/model"
+	"vgo-software/vgo/internal/global"
+	"vgo-software/vgo/pkg/enum"
+	"vgo-software/vgo/pkg/response"
 )
 
 // Index 无限极分类菜单结构

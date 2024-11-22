@@ -1,11 +1,11 @@
 package router
 
 import (
-	"ych/vgo/app/upload/api/ali-oss"
-	"ych/vgo/app/upload/api/auto"
-	"ych/vgo/app/upload/api/local"
-	"ych/vgo/app/upload/api/tencent-cos"
-	"ych/vgo/internal/global"
+	"vgo-software/vgo/app/upload/api/ali-oss"
+	"vgo-software/vgo/app/upload/api/auto"
+	"vgo-software/vgo/app/upload/api/local"
+	"vgo-software/vgo/app/upload/api/tencent-cos"
+	"vgo-software/vgo/internal/global"
 )
 
 func CollectRoutes() {

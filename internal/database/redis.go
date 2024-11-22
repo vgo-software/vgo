@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 	goRedis "github.com/redis/go-redis/v9"
-	"ych/vgo/internal/global"
+	"vgo-software/vgo/internal/global"
 )
 
 // ConnectRedis 连接redis

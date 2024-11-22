@@ -1,8 +1,8 @@
 package router
 
 import (
-	"ych/vgo/app/notice/api"
-	"ych/vgo/app/notice/backend"
+	"vgo-software/vgo/app/notice/api"
+	"vgo-software/vgo/app/notice/backend"
 )
 
 func CollectRoutes() {

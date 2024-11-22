@@ -1,6 +1,6 @@
 package model
 
-import "ych/vgo/app/common/model"
+import "vgo-software/vgo/app/common/model"
 
 type Article struct {
 	model.BaseModel

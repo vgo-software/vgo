@@ -3,12 +3,12 @@ package backend
 import (
 	"github.com/gin-gonic/gin"
 	"time"
-	"ych/vgo/app/article/model"
-	"ych/vgo/app/common/backend"
-	"ych/vgo/internal/global"
-	"ych/vgo/internal/pkg/middleware/rate-limiter"
-	"ych/vgo/pkg/helper"
-	"ych/vgo/pkg/response"
+	"vgo-software/vgo/app/article/model"
+	"vgo-software/vgo/app/common/backend"
+	"vgo-software/vgo/internal/global"
+	"vgo-software/vgo/internal/pkg/middleware/rate-limiter"
+	"vgo-software/vgo/pkg/helper"
+	"vgo-software/vgo/pkg/response"
 )
 
 // Change 改变状态
