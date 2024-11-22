@@ -1,7 +1,7 @@
 package core
 
 import (
-	"vgo-software/vgo/internal/bootstrap"
+	"ych/vgo/internal/bootstrap"
 )
 
 func Run() {

@@ -3,8 +3,8 @@ package bootstrap
 import (
 	"sync"
 	"time"
-	"vgo-software/vgo/internal/global"
-	"vgo-software/vgo/internal/pkg/middleware/auth"
+	"ych/vgo/internal/global"
+	"ych/vgo/internal/pkg/middleware/auth"
 )
 
 // authLock 读写锁

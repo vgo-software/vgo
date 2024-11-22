@@ -4,8 +4,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"strconv"
 	"strings"
-	"vgo-software/vgo/internal/global"
-	"vgo-software/vgo/pkg/response"
+	"ych/vgo/internal/global"
+	"ych/vgo/pkg/response"
 )
 
 // AdminAuthMiddleware JWT验证中间件
@@ -46,7 +46,7 @@ func AdminAuthMiddleware() gin.HandlerFunc {
 		if JwtConf.AdminSingleLogin == 1 {
 			redisToken := redisCon.Get(c, "admin_token"+strconv.Itoa(int(claims.UserID)))
 			if redisToken == nil || redisToken.Val() != tokenString {
-				// Token is invalid --Backend-- redis00
+				// Token is invalid --backend-- redis00
 				response.NotLogin(c, "Token无效", nil)
 				c.Abort()
 				return

@@ -3,7 +3,7 @@ package bootstrap
 import (
 	"github.com/go-playground/validator/v10"
 	"sync"
-	"vgo-software/vgo/internal/global"
+	"ych/vgo/internal/global"
 )
 
 // validatorLock 读写锁

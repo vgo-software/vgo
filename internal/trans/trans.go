@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 	"sync"
-	"vgo-software/vgo/internal/global"
+	"ych/vgo/internal/global"
 )
 
 var (

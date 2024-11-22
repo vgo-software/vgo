@@ -2,8 +2,8 @@ package bootstrap
 
 import (
 	"sync"
-	"vgo-software/vgo/internal/database"
-	"vgo-software/vgo/internal/global"
+	"ych/vgo/internal/database"
+	"ych/vgo/internal/global"
 )
 
 // redisLock 读写锁

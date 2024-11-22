@@ -7,7 +7,7 @@ import (
 	goRedis "github.com/redis/go-redis/v9"
 	"go.uber.org/zap"
 	"gorm.io/gorm"
-	"vgo-software/vgo/internal/config"
+	"ych/vgo/internal/config"
 )
 
 // Configs 全局配置

@@ -2,8 +2,8 @@ package bootstrap
 
 import (
 	"sync"
-	"vgo-software/vgo/internal/global"
-	"vgo-software/vgo/internal/log"
+	"ych/vgo/internal/global"
+	"ych/vgo/internal/log"
 )
 
 // logLock 读写锁

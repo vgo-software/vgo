@@ -4,7 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"time"
-	"vgo-software/vgo/internal/trans"
+	"ych/vgo/internal/trans"
 )
 
 func jsonResponse(ctx *gin.Context, code int, msg string, data interface{}, extraData ...interface{}) {

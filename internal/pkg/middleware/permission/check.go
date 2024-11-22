@@ -4,7 +4,7 @@ import (
 	"github.com/casbin/casbin/v2"
 	"github.com/gin-gonic/gin"
 	"regexp"
-	"vgo-software/vgo/pkg/response"
+	"ych/vgo/pkg/response"
 )
 
 // Check 权限检查中间件

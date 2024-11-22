@@ -6,10 +6,10 @@ import (
 	"log"
 	"strings"
 	"time"
-	"vgo-software/vgo/app"
-	"vgo-software/vgo/internal/global"
-	"vgo-software/vgo/internal/pkg/middleware/request-logger"
-	"vgo-software/vgo/pkg/response"
+	"ych/vgo/app"
+	"ych/vgo/internal/global"
+	"ych/vgo/internal/pkg/middleware/request-logger"
+	"ych/vgo/pkg/response"
 )
 
 // Run 启动
