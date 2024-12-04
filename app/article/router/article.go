@@ -6,6 +6,6 @@ import (
 )
 
 func CollectRoutes() {
-	backend.RegisterArticleRoutes()
-	api.RegisterArticleRoutes()
+	api.RegisterRoutes()
+	backend.RegisterRoutes()
 }

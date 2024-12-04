@@ -6,7 +6,7 @@ import (
 	"vgo-software/vgo/internal/global"
 )
 
-func RegisterArticleRoutes() {
+func RegisterRoutes() {
 	articleHandler := backend.NewCRUDHandler(&model.Article{}, nil)
 	global.ApiRouter.GET("/articles", articleHandler.Index)
 	global.ApiRouter.GET("/articles/:id", articleHandler.Show)

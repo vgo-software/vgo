@@ -73,6 +73,7 @@
 
     ws.onopen = () => {
         console.log('WebSocket connection established.');
+        ws.send("5555");
     };
 
     ws.onmessage = (event) => {

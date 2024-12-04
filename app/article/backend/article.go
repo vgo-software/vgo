@@ -25,7 +25,7 @@ func Change(ctx *gin.Context) {
 	response.Success(ctx, "成功", nil, nil)
 }
 
-func RegisterArticleRoutes() {
+func RegisterRoutes() {
 	ArticleValidateRules := &backend.ValidationRules{
 		Create: map[string]map[string]string{
 			"Title": {

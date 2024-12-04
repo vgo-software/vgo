@@ -44,7 +44,7 @@ func Trans(ctx *gin.Context, key string, values ...interface{}) string {
 		return fmt.Sprintf(val, values...)
 	}
 	if global.Config.App.Env == "debug" {
-		fmt.Println("获取翻译出错！")
+		fmt.Println("获取翻译出错：" + key)
 	}
 	return key
 }
