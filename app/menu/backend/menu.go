@@ -7,6 +7,7 @@ import (
 	"vgo-software/vgo/app/menu/model"
 	Role "vgo-software/vgo/app/role/model"
 	"vgo-software/vgo/internal/global"
+	"vgo-software/vgo/internal/pkg/middleware/auth"
 	"vgo-software/vgo/pkg/enum"
 	"vgo-software/vgo/pkg/response"
 )
@@ -143,7 +144,8 @@ func RegisterMenuRoutes() {
 	global.BackendRouter.PUT("/menus", handler.Update)
 	global.BackendRouter.DELETE("/menus", handler.Delete)
 
-	global.BackendRouter.GET("/menus", Index)
-	global.BackendRouter.GET("/buttons", Buttons)
+	global.Engine.Group("/backend").Use(auth.AdminAuthMiddleware()).GET("/menus", Index)
+	global.Engine.Group("/backend").Use(auth.AdminAuthMiddleware()).GET("/buttons", Buttons)
+
 	global.BackendRouter.GET("/menu/selectTreeDataSource", GetSelectTree)
 }
