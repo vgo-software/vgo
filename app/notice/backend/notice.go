@@ -36,8 +36,8 @@ func Index(ctx *gin.Context) {
 
 // Create 新增
 func Create(ctx *gin.Context) {
-	var model model.Notice
-	if err := helper.BindJSON(ctx, &model); err != nil {
+	var m model.Notice
+	if err := helper.BindJSON(ctx, &m); err != nil {
 		response.Fail(ctx, "参数错误", err.Error(), nil)
 		return
 	}
@@ -47,16 +47,16 @@ func Create(ctx *gin.Context) {
 			"required": "标题不能为空",
 		},
 	}
-	if res, err := helper.Validate(model, rules); !res {
+	if res, err := helper.Validate(m, rules); !res {
 		response.Fail(ctx, err, nil)
 		return
 	}
-	err := global.DbCon.Create(&model).Error
+	err := global.DbCon.Create(&m).Error
 	if err != nil {
 		response.Fail(ctx, "新增失败", err.Error())
 		return
 	}
-	response.Success(ctx, "成功", model, nil)
+	response.Success(ctx, "成功", m, nil)
 }
 
 // Update 编辑

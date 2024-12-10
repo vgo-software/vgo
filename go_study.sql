@@ -11,7 +11,7 @@
  Target Server Version : 80031 (8.0.31)
  File Encoding         : 65001
 
- Date: 04/12/2024 16:30:39
+ Date: 10/12/2024 09:26:25
 */
 
 SET NAMES utf8mb4;
@@ -87,37 +87,40 @@ CREATE TABLE `casbin_rule`  (
   `v5` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `idx_casbin_rule`(`ptype` ASC, `v0` ASC, `v1` ASC, `v2` ASC, `v3` ASC, `v4` ASC, `v5` ASC) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 654 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 681 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of casbin_rule
 -- ----------------------------
 INSERT INTO `casbin_rule` VALUES (450, 'g', '30', 'admin', '', '', '', '');
 INSERT INTO `casbin_rule` VALUES (451, 'g', '31', 'admin', '', '', '', '');
-INSERT INTO `casbin_rule` VALUES (640, 'p', 'admin', '/backend/articles', 'DELETE', '', '', '');
-INSERT INTO `casbin_rule` VALUES (637, 'p', 'admin', '/backend/articles', 'GET', '', '', '');
-INSERT INTO `casbin_rule` VALUES (638, 'p', 'admin', '/backend/articles', 'POST', '', '', '');
-INSERT INTO `casbin_rule` VALUES (639, 'p', 'admin', '/backend/articles', 'PUT', '', '', '');
-INSERT INTO `casbin_rule` VALUES (641, 'p', 'admin', '/backend/articles/change', 'POST', '', '', '');
-INSERT INTO `casbin_rule` VALUES (633, 'p', 'admin', '/backend/notices', 'DELETE', '', '', '');
-INSERT INTO `casbin_rule` VALUES (630, 'p', 'admin', '/backend/notices', 'GET', '', '', '');
-INSERT INTO `casbin_rule` VALUES (631, 'p', 'admin', '/backend/notices', 'POST', '', '', '');
-INSERT INTO `casbin_rule` VALUES (632, 'p', 'admin', '/backend/notices', 'PUT', '', '', '');
-INSERT INTO `casbin_rule` VALUES (634, 'p', 'admin', '/backend/notices/change', 'POST', '', '', '');
-INSERT INTO `casbin_rule` VALUES (651, 'p', 'admin', '/backend/roles', 'DELETE', '', '', '');
-INSERT INTO `casbin_rule` VALUES (648, 'p', 'admin', '/backend/roles', 'GET', '', '', '');
-INSERT INTO `casbin_rule` VALUES (649, 'p', 'admin', '/backend/roles', 'POST', '', '', '');
-INSERT INTO `casbin_rule` VALUES (650, 'p', 'admin', '/backend/roles', 'PUT', '', '', '');
-INSERT INTO `casbin_rule` VALUES (653, 'p', 'admin', '/backend/roles/get/menu', 'POST', '', '', '');
-INSERT INTO `casbin_rule` VALUES (652, 'p', 'admin', '/backend/roles/set/menu', 'POST', '', '', '');
-INSERT INTO `casbin_rule` VALUES (635, 'p', 'admin', '/backend/upload/local/img', 'POST', '', '', '');
-INSERT INTO `casbin_rule` VALUES (636, 'p', 'admin', '/backend/upload/local/video', 'POST', '', '', '');
-INSERT INTO `casbin_rule` VALUES (645, 'p', 'admin', '/backend/users', 'DELETE', '', '', '');
-INSERT INTO `casbin_rule` VALUES (642, 'p', 'admin', '/backend/users', 'GET', '', '', '');
-INSERT INTO `casbin_rule` VALUES (643, 'p', 'admin', '/backend/users', 'POST', '', '', '');
-INSERT INTO `casbin_rule` VALUES (644, 'p', 'admin', '/backend/users', 'PUT', '', '', '');
-INSERT INTO `casbin_rule` VALUES (646, 'p', 'admin', '/backend/users/get/role', 'POST', '', '', '');
-INSERT INTO `casbin_rule` VALUES (647, 'p', 'admin', '/backend/users/set/role', 'POST', '', '', '');
+INSERT INTO `casbin_rule` VALUES (664, 'p', 'admin', '/backend/articles', 'DELETE', '', '', '');
+INSERT INTO `casbin_rule` VALUES (661, 'p', 'admin', '/backend/articles', 'GET', '', '', '');
+INSERT INTO `casbin_rule` VALUES (662, 'p', 'admin', '/backend/articles', 'POST', '', '', '');
+INSERT INTO `casbin_rule` VALUES (663, 'p', 'admin', '/backend/articles', 'PUT', '', '', '');
+INSERT INTO `casbin_rule` VALUES (665, 'p', 'admin', '/backend/articles/change', 'POST', '', '', '');
+INSERT INTO `casbin_rule` VALUES (668, 'p', 'admin', '/backend/menus', 'DELETE', '', '', '');
+INSERT INTO `casbin_rule` VALUES (666, 'p', 'admin', '/backend/menus', 'POST', '', '', '');
+INSERT INTO `casbin_rule` VALUES (667, 'p', 'admin', '/backend/menus', 'PUT', '', '', '');
+INSERT INTO `casbin_rule` VALUES (657, 'p', 'admin', '/backend/notices', 'DELETE', '', '', '');
+INSERT INTO `casbin_rule` VALUES (654, 'p', 'admin', '/backend/notices', 'GET', '', '', '');
+INSERT INTO `casbin_rule` VALUES (655, 'p', 'admin', '/backend/notices', 'POST', '', '', '');
+INSERT INTO `casbin_rule` VALUES (656, 'p', 'admin', '/backend/notices', 'PUT', '', '', '');
+INSERT INTO `casbin_rule` VALUES (658, 'p', 'admin', '/backend/notices/change', 'POST', '', '', '');
+INSERT INTO `casbin_rule` VALUES (678, 'p', 'admin', '/backend/roles', 'DELETE', '', '', '');
+INSERT INTO `casbin_rule` VALUES (675, 'p', 'admin', '/backend/roles', 'GET', '', '', '');
+INSERT INTO `casbin_rule` VALUES (676, 'p', 'admin', '/backend/roles', 'POST', '', '', '');
+INSERT INTO `casbin_rule` VALUES (677, 'p', 'admin', '/backend/roles', 'PUT', '', '', '');
+INSERT INTO `casbin_rule` VALUES (680, 'p', 'admin', '/backend/roles/get/menu', 'POST', '', '', '');
+INSERT INTO `casbin_rule` VALUES (679, 'p', 'admin', '/backend/roles/set/menu', 'POST', '', '', '');
+INSERT INTO `casbin_rule` VALUES (659, 'p', 'admin', '/backend/upload/local/img', 'POST', '', '', '');
+INSERT INTO `casbin_rule` VALUES (660, 'p', 'admin', '/backend/upload/local/video', 'POST', '', '', '');
+INSERT INTO `casbin_rule` VALUES (672, 'p', 'admin', '/backend/users', 'DELETE', '', '', '');
+INSERT INTO `casbin_rule` VALUES (669, 'p', 'admin', '/backend/users', 'GET', '', '', '');
+INSERT INTO `casbin_rule` VALUES (670, 'p', 'admin', '/backend/users', 'POST', '', '', '');
+INSERT INTO `casbin_rule` VALUES (671, 'p', 'admin', '/backend/users', 'PUT', '', '', '');
+INSERT INTO `casbin_rule` VALUES (673, 'p', 'admin', '/backend/users/get/role', 'POST', '', '', '');
+INSERT INTO `casbin_rule` VALUES (674, 'p', 'admin', '/backend/users/set/role', 'POST', '', '', '');
 
 -- ----------------------------
 -- Table structure for menus
@@ -146,7 +149,7 @@ CREATE TABLE `menus`  (
   `type` smallint NOT NULL DEFAULT 1 COMMENT '类型 (1菜单2按钮3外链4Iframe)',
   `sort` bigint NOT NULL DEFAULT 0 COMMENT '排序',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 62 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 68 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of menus
@@ -162,7 +165,7 @@ INSERT INTO `menus` VALUES (10, NULL, '2024-11-04 11:40:03.682', 4, '', 'change'
 INSERT INTO `menus` VALUES (12, NULL, '2024-09-02 15:59:39.192', 0, '/authority', 'authority', '/authority/menu', '', '', '', 'Lock', '权限管理', '', '', 2, 2, 2, 2, 1, 1, 0);
 INSERT INTO `menus` VALUES (13, NULL, '2024-09-02 17:18:24.867', 12, '/authority/menu', 'menuAuthority', '', '', '', '/authority/menu/index', 'Menu', '菜单权限', '', '', 2, 2, 2, 2, 1, 1, 0);
 INSERT INTO `menus` VALUES (30, '2024-09-02 10:35:03.467', '2024-11-04 11:46:41.797', 12, '/authority/admin_user', 'adminUser', '', '/backend/users', 'GET', '/authority/admin_user/index', 'Avatar', '管理员', '', '', 2, 2, 2, 2, 1, 1, 0);
-INSERT INTO `menus` VALUES (31, '2024-09-02 16:10:02.983', '2024-11-04 11:45:03.431', 12, '/authority/role', 'role', '', '/backend/roles', 'GET', '/authority/role/index', 'Stamp', '角色管理', '', '', 2, 2, 2, 2, 1, 1, 0);
+INSERT INTO `menus` VALUES (31, '2024-09-02 16:10:02.983', '2024-11-04 11:45:03.431', 12, '/authority/roles', 'roles', '', '/backend/roles', 'GET', '/authority/roles/index', 'Stamp', '角色管理', '', '', 2, 2, 2, 2, 1, 1, 0);
 INSERT INTO `menus` VALUES (36, NULL, '2024-11-04 11:46:53.547', 13, '', 'create', '', '/backend/menus', 'POST', '', '', '添加', '', '', 1, 2, 2, 2, 1, 2, 0);
 INSERT INTO `menus` VALUES (37, NULL, '2024-11-04 11:48:18.520', 13, '', 'update', '', '/backend/menus', 'PUT', '', '', '编辑', '', '', 1, 2, 2, 2, 1, 2, 0);
 INSERT INTO `menus` VALUES (38, NULL, '2024-11-04 11:48:21.419', 13, '', 'delete', '', '/backend/menus', 'DELETE', '', '', '删除', '', '', 1, 2, 2, 2, 1, 2, 0);
@@ -184,6 +187,27 @@ INSERT INTO `menus` VALUES (56, NULL, '2024-11-04 11:35:27.869', 55, '', 'create
 INSERT INTO `menus` VALUES (57, NULL, '2024-11-04 11:35:38.638', 55, '', 'update', '', '/backend/articles', 'PUT', '', '', '编辑', '', '', 1, 2, 2, 2, 1, 2, 0);
 INSERT INTO `menus` VALUES (58, NULL, '2024-11-04 11:35:42.685', 55, '', 'delete', '', '/backend/articles', 'DELETE', '', '', '删除', '', '', 1, 2, 2, 2, 1, 2, 0);
 INSERT INTO `menus` VALUES (60, NULL, '2024-11-04 14:14:50.351', 55, '', 'change', '', '/backend/articles/change', 'POST', '', '', '修改状态', '', '', 1, 2, 2, 2, 1, 2, 0);
+INSERT INTO `menus` VALUES (62, '2024-12-09 07:47:39.974', '2024-12-09 07:48:24.014', 0, '/dev', 'dev', '', '', '', '', 'Opportunity', '开发者菜单', '', '', 2, 2, 2, 2, 1, 1, 0);
+INSERT INTO `menus` VALUES (63, '2024-10-31 16:31:36.808', '2024-11-04 11:35:23.780', 62, '/cms/module', 'module', '', '/backend/modules', 'GET', '/dev/module/index', 'Burger', '模块管理', '', '', 2, 2, 2, 2, 1, 1, 0);
+INSERT INTO `menus` VALUES (64, NULL, '2024-11-04 11:35:27.869', 63, '', 'create', '', '/backend/modules', 'POST', '', '', '添加', '', '', 1, 2, 2, 2, 1, 2, 0);
+INSERT INTO `menus` VALUES (65, NULL, '2024-11-04 11:35:38.638', 63, '', 'update', '', '/backend/modules', 'PUT', '', '', '编辑', '', '', 1, 2, 2, 2, 1, 2, 0);
+INSERT INTO `menus` VALUES (66, NULL, '2024-11-04 11:35:42.685', 63, '', 'delete', '', '/backend/modules', 'DELETE', '', '', '删除', '', '', 1, 2, 2, 2, 1, 2, 0);
+
+-- ----------------------------
+-- Table structure for modules
+-- ----------------------------
+DROP TABLE IF EXISTS `modules`;
+CREATE TABLE `modules`  (
+  `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT,
+  `created_at` datetime(3) NULL DEFAULT NULL,
+  `updated_at` datetime(3) NULL DEFAULT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '' COMMENT 'name',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 103 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of modules
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for notices
@@ -219,40 +243,44 @@ CREATE TABLE `role_menus`  (
   `role_id` bigint UNSIGNED NOT NULL DEFAULT 0 COMMENT '角色ID',
   `menu_id` bigint UNSIGNED NOT NULL DEFAULT 0 COMMENT '菜单ID',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1594 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 1627 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of role_menus
 -- ----------------------------
-INSERT INTO `role_menus` VALUES (1565, '2024-12-04 08:28:45.684', '2024-12-04 08:28:45.684', 10, 1);
-INSERT INTO `role_menus` VALUES (1566, '2024-12-04 08:28:45.685', '2024-12-04 08:28:45.685', 10, 3);
-INSERT INTO `role_menus` VALUES (1567, '2024-12-04 08:28:45.688', '2024-12-04 08:28:45.688', 10, 4);
-INSERT INTO `role_menus` VALUES (1568, '2024-12-04 08:28:45.689', '2024-12-04 08:28:45.689', 10, 5);
-INSERT INTO `role_menus` VALUES (1569, '2024-12-04 08:28:45.691', '2024-12-04 08:28:45.691', 10, 6);
-INSERT INTO `role_menus` VALUES (1570, '2024-12-04 08:28:45.694', '2024-12-04 08:28:45.694', 10, 7);
-INSERT INTO `role_menus` VALUES (1571, '2024-12-04 08:28:45.697', '2024-12-04 08:28:45.697', 10, 8);
-INSERT INTO `role_menus` VALUES (1572, '2024-12-04 08:28:45.699', '2024-12-04 08:28:45.699', 10, 10);
-INSERT INTO `role_menus` VALUES (1573, '2024-12-04 08:28:45.700', '2024-12-04 08:28:45.700', 10, 52);
-INSERT INTO `role_menus` VALUES (1574, '2024-12-04 08:28:45.703', '2024-12-04 08:28:45.703', 10, 53);
-INSERT INTO `role_menus` VALUES (1575, '2024-12-04 08:28:45.706', '2024-12-04 08:28:45.706', 10, 54);
-INSERT INTO `role_menus` VALUES (1576, '2024-12-04 08:28:45.708', '2024-12-04 08:28:45.708', 10, 55);
-INSERT INTO `role_menus` VALUES (1577, '2024-12-04 08:28:45.711', '2024-12-04 08:28:45.711', 10, 56);
-INSERT INTO `role_menus` VALUES (1578, '2024-12-04 08:28:45.714', '2024-12-04 08:28:45.714', 10, 57);
-INSERT INTO `role_menus` VALUES (1579, '2024-12-04 08:28:45.716', '2024-12-04 08:28:45.716', 10, 58);
-INSERT INTO `role_menus` VALUES (1580, '2024-12-04 08:28:45.718', '2024-12-04 08:28:45.718', 10, 60);
-INSERT INTO `role_menus` VALUES (1581, '2024-12-04 08:28:45.720', '2024-12-04 08:28:45.720', 10, 12);
-INSERT INTO `role_menus` VALUES (1582, '2024-12-04 08:28:45.722', '2024-12-04 08:28:45.722', 10, 30);
-INSERT INTO `role_menus` VALUES (1583, '2024-12-04 08:28:45.724', '2024-12-04 08:28:45.724', 10, 42);
-INSERT INTO `role_menus` VALUES (1584, '2024-12-04 08:28:45.727', '2024-12-04 08:28:45.727', 10, 43);
-INSERT INTO `role_menus` VALUES (1585, '2024-12-04 08:28:45.729', '2024-12-04 08:28:45.729', 10, 44);
-INSERT INTO `role_menus` VALUES (1586, '2024-12-04 08:28:45.732', '2024-12-04 08:28:45.732', 10, 45);
-INSERT INTO `role_menus` VALUES (1587, '2024-12-04 08:28:45.734', '2024-12-04 08:28:45.734', 10, 46);
-INSERT INTO `role_menus` VALUES (1588, '2024-12-04 08:28:45.736', '2024-12-04 08:28:45.736', 10, 31);
-INSERT INTO `role_menus` VALUES (1589, '2024-12-04 08:28:45.739', '2024-12-04 08:28:45.739', 10, 47);
-INSERT INTO `role_menus` VALUES (1590, '2024-12-04 08:28:45.741', '2024-12-04 08:28:45.741', 10, 48);
-INSERT INTO `role_menus` VALUES (1591, '2024-12-04 08:28:45.743', '2024-12-04 08:28:45.743', 10, 49);
-INSERT INTO `role_menus` VALUES (1592, '2024-12-04 08:28:45.746', '2024-12-04 08:28:45.746', 10, 50);
-INSERT INTO `role_menus` VALUES (1593, '2024-12-04 08:28:45.748', '2024-12-04 08:28:45.748', 10, 51);
+INSERT INTO `role_menus` VALUES (1594, '2024-12-04 08:46:00.924', '2024-12-04 08:46:00.924', 10, 1);
+INSERT INTO `role_menus` VALUES (1595, '2024-12-04 08:46:00.926', '2024-12-04 08:46:00.926', 10, 3);
+INSERT INTO `role_menus` VALUES (1596, '2024-12-04 08:46:00.929', '2024-12-04 08:46:00.929', 10, 4);
+INSERT INTO `role_menus` VALUES (1597, '2024-12-04 08:46:00.930', '2024-12-04 08:46:00.930', 10, 5);
+INSERT INTO `role_menus` VALUES (1598, '2024-12-04 08:46:00.933', '2024-12-04 08:46:00.933', 10, 6);
+INSERT INTO `role_menus` VALUES (1599, '2024-12-04 08:46:00.935', '2024-12-04 08:46:00.935', 10, 7);
+INSERT INTO `role_menus` VALUES (1600, '2024-12-04 08:46:00.938', '2024-12-04 08:46:00.938', 10, 8);
+INSERT INTO `role_menus` VALUES (1601, '2024-12-04 08:46:00.940', '2024-12-04 08:46:00.940', 10, 10);
+INSERT INTO `role_menus` VALUES (1602, '2024-12-04 08:46:00.942', '2024-12-04 08:46:00.942', 10, 52);
+INSERT INTO `role_menus` VALUES (1603, '2024-12-04 08:46:00.944', '2024-12-04 08:46:00.944', 10, 53);
+INSERT INTO `role_menus` VALUES (1604, '2024-12-04 08:46:00.946', '2024-12-04 08:46:00.946', 10, 54);
+INSERT INTO `role_menus` VALUES (1605, '2024-12-04 08:46:00.949', '2024-12-04 08:46:00.949', 10, 55);
+INSERT INTO `role_menus` VALUES (1606, '2024-12-04 08:46:00.951', '2024-12-04 08:46:00.951', 10, 56);
+INSERT INTO `role_menus` VALUES (1607, '2024-12-04 08:46:00.953', '2024-12-04 08:46:00.953', 10, 57);
+INSERT INTO `role_menus` VALUES (1608, '2024-12-04 08:46:00.956', '2024-12-04 08:46:00.956', 10, 58);
+INSERT INTO `role_menus` VALUES (1609, '2024-12-04 08:46:00.959', '2024-12-04 08:46:00.959', 10, 60);
+INSERT INTO `role_menus` VALUES (1610, '2024-12-04 08:46:00.960', '2024-12-04 08:46:00.960', 10, 12);
+INSERT INTO `role_menus` VALUES (1611, '2024-12-04 08:46:00.961', '2024-12-04 08:46:00.961', 10, 13);
+INSERT INTO `role_menus` VALUES (1612, '2024-12-04 08:46:00.963', '2024-12-04 08:46:00.963', 10, 36);
+INSERT INTO `role_menus` VALUES (1613, '2024-12-04 08:46:00.966', '2024-12-04 08:46:00.966', 10, 37);
+INSERT INTO `role_menus` VALUES (1614, '2024-12-04 08:46:00.968', '2024-12-04 08:46:00.968', 10, 38);
+INSERT INTO `role_menus` VALUES (1615, '2024-12-04 08:46:00.971', '2024-12-04 08:46:00.971', 10, 30);
+INSERT INTO `role_menus` VALUES (1616, '2024-12-04 08:46:00.974', '2024-12-04 08:46:00.974', 10, 42);
+INSERT INTO `role_menus` VALUES (1617, '2024-12-04 08:46:00.980', '2024-12-04 08:46:00.980', 10, 43);
+INSERT INTO `role_menus` VALUES (1618, '2024-12-04 08:46:00.984', '2024-12-04 08:46:00.984', 10, 44);
+INSERT INTO `role_menus` VALUES (1619, '2024-12-04 08:46:00.987', '2024-12-04 08:46:00.987', 10, 45);
+INSERT INTO `role_menus` VALUES (1620, '2024-12-04 08:46:00.990', '2024-12-04 08:46:00.990', 10, 46);
+INSERT INTO `role_menus` VALUES (1621, '2024-12-04 08:46:00.996', '2024-12-04 08:46:00.996', 10, 31);
+INSERT INTO `role_menus` VALUES (1622, '2024-12-04 08:46:00.999', '2024-12-04 08:46:00.999', 10, 47);
+INSERT INTO `role_menus` VALUES (1623, '2024-12-04 08:46:01.001', '2024-12-04 08:46:01.001', 10, 48);
+INSERT INTO `role_menus` VALUES (1624, '2024-12-04 08:46:01.004', '2024-12-04 08:46:01.004', 10, 49);
+INSERT INTO `role_menus` VALUES (1625, '2024-12-04 08:46:01.006', '2024-12-04 08:46:01.006', 10, 50);
+INSERT INTO `role_menus` VALUES (1626, '2024-12-04 08:46:01.009', '2024-12-04 08:46:01.009', 10, 51);
 
 -- ----------------------------
 -- Table structure for roles

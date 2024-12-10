@@ -33,10 +33,11 @@ func Test(ctx *gin.Context) {
 	//}
 	//global.Logger.Info(fmt.Sprintf("enqueued task: id=%s queue=%s", info.ID, info.Queue))
 
-	//err := global.DbCon.AutoMigrate(&model.notice{})
+	//err := global.DbCon.AutoMigrate(&model.Module{})
 	//if err != nil {
 	//	return
 	//}
+
 	response.Success(ctx, "vgo!!!", nil)
 	return
 }

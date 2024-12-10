@@ -5,6 +5,7 @@ import (
 	ArticleRouter "vgo-software/vgo/app/article/router"
 	CommonRouter "vgo-software/vgo/app/common/router"
 	MenuRouter "vgo-software/vgo/app/menu/router"
+	ModuleRouter "vgo-software/vgo/app/module/router"
 	NoticeRouter "vgo-software/vgo/app/notice/router"
 	RoleRouter "vgo-software/vgo/app/role/router"
 	UploadRouter "vgo-software/vgo/app/upload/router"
@@ -30,5 +31,6 @@ func InitRouter() {
 	UploadRouter.CollectRoutes()
 
 	MenuRouter.CollectRoutes()
+	ModuleRouter.CollectRoutes()
 	RoleRouter.CollectRoutes()
 }
